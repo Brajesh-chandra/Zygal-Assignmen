@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Calendar-App(Zygal-Assignment)</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="box">
+            <div id="wrap-up-box">
+                <select class="upper-boxes" id="month" onchange="print()">
+                    <option value="" disabled selected>Select Month</option>
+                </select>
+
+                <select class="upper-boxes" id="year" onchange="print1()">
+                    <option value="" disabled selected>Select Year</option>
+                </select>
+            </div>
+
+            <div id="calendar"></div>
+            <div id="foot">
+                <input type="text" id="input" class="footer" placeholder="Enter Any Date">
+                <button class="footer" onclick="func()">ENTER</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
